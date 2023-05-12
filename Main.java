@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Main
 {
     /**
@@ -10,7 +12,7 @@ class Main
     
     public void text2()
     {
-        System.out.println("Goodbye, KoK0o");
+        System.out.println("Goodbye, KoK00");
     }
     
     /**
@@ -19,13 +21,16 @@ class Main
     public static void main(String[] args)
     {
         Main hi = new Main();
-        int x = 0;
-        
-        while (x <= 4) {
-            hi.text();
-            if (x == 3)
-                hi.text2();
-            x = x + 1;
-        }
+        int x = 0;     
+            while (x <= 3) {
+                hi.text();
+                if (x == 3)
+                    hi.text2();
+                x = x + 1;
+            }      
+        System.out.print("Enter an integer to exit: ");
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
     }
+    
 }
